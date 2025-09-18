@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawthar AlHallak</title>
+
+<style>
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #e0f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00bcd4;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(60%);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Profile Image */
+.profile-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(30%);
+    display: block;
+    margin: 0 auto;
+}
+
+.hover-text:hover {
+    color: #00796b;
+    cursor: pointer;
+}
+
+/* Table Styling */
+.table-section {
+    padding: 40px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td {
+    border: 2px solid #0097a7;
+    padding: 12px;
+}
+
+th {
+    background-color: #4dd0e1;
+    color: white;
+}
+
+/* Two-Column Layout */
+.two-columns {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.column {
+    width: 45%;
+    height: 200px;
+    background-color: #b2ebf2;
+    color: #004d40;
+    padding: 20px;
+}
+
+/* Image Overlay Fade */
+.fade-container {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.fade-container img {
+    width: 100%;
+    display: block;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+.fade-container:hover img {
+    opacity: 0.5;
+}
+
+.fade-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    color: #004d40;
+    font-weight: bold;
+}
+
+/* Video Section */
+.video-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.video-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00bcd4;
+    color: white;
+    font-weight: bold;
+}
+
+</style>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Text on Image -->
+    <header id="home" class="hero-section">
+        <img src="https://cdn.pixabay.com/photo/2016/10/22/18/52/beach-1761410_1280.jpg" alt="Background">
+        <div class="overlay-text">Welcome to Kawthar's Portfolio</div>
+    </header>
+
+    <!-- Profile Image -->
+    <section id="about" class="profile-section">
+        <h2>About Me</h2>
+        <img src="https://cdn.pixabay.com/photo/2024/08/12/10/44/bird-8963386_1280.jpg" alt="Kawthar AlHallak" class="profile-img">
+        <p class="hover-text">Hi! I'm Kawthar, a passionate student learning web development.</p>
+    </section>
+
+    <!-- Table Section -->
+    <section id="table" class="table-section">
+        <h2>Skills Table</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Two-Column Layout -->
+    <section class="two-columns">
+        <div class="column">This is column one.</div>
+        <div class="column">This is column two.</div>
+    </section>
+
+    <!-- Image Overlay Fade -->
+    <section class="image-fade">
+        <div class="fade-container">
+            <img src="https://cdn.pixabay.com/photo/2024/02/22/00/27/iguana-8588842_1280.jpg" alt="Fading Image">
+            <div class="fade-text">Cool Overlay Fade</div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <h2>Featured Video</h2>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="https://cdn.pixabay.com/video/2021/04/12/70796-538877060_tiny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-text">Watch</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Kawthar AlHallak | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
